@@ -69,6 +69,4 @@ class MyApp(App):
         self.running = False
 
 my_application = MyApp()
-
-running = threading.Thread(target=my_application.run(), args=())
-running.start()
+my_application.run()
